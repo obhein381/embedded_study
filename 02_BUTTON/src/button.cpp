@@ -3,7 +3,7 @@
 
 void init_button(Button &button)
 {
-    pinMode(BUTTON_PIN, INPUT);
+    pinMode(BUTTON_PIN, INPUT_PULLUP);
     button.count = 0;
     button.cur_state = HIGH;
     button.prev_state = HIGH;
